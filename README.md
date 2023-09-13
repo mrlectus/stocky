@@ -33,7 +33,3 @@ Switch statements were employed for user interaction within the application. For
 To enhance the robustness of our application, we implemented error handling using try-catch-finally statements. Here's how they were integrated:
 
 *   **Insufficient Funds:** When users attempt to purchase stocks with insufficient funds, we employ try-catch blocks to handle this scenario gracefully, providing informative error messages.
-
-**Conclusion:**
-
-Incorporating classes, switch statements, and error handling with try-catch-finally has been pivotal in the development of our Stock Portfolio Tracker. These programming concepts have enabled us to build a feature-rich and user-friendly application that empowers users to manage their investments effectively, while also ensuring a robust and reliable user experience.
