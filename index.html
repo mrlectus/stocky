@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
+  <link rel=stylesheet href="./index.css">
+  <script src="./index.js" defer></script>
+  <title>Stock</title>
+</head>
+
+<body class="bg-black text-white" style="font-family: 'Poppins', sans-serif">
+  <div id="title" class="flex justify-center text-4xl p-4 font-bold uppercase">Stock</div>
+  <div class="flex flex-col gap-4 p-4">
+    <div class="flex flex-row gap-2 font-bold">
+      <span>Welcome: </span>
+      <p id="username" class="bg-green-600 text-black rounded-xl px-2"></p>
+    </div>
+    <div class="flex gap-2 font-bold">
+      <span>Balance: </span>
+      <p id="balance" class="bg-green-600 text-black rounded-xl px-2"></p>
+    </div>
+    <div>
+      <input id="amount" type="text" placeholder="update your balance"
+        class="outline-none rounded-md p-2 w-48 text-black" />
+      <button class="bg-purple-600 text-black h-10 rounded-md p-2" id="update-amount">update</button>
+    </div>
+  </div>
+  <div class="p-4">
+    <h2 class="mx-2 font-bold text-xl text-purple-400">Available Stocks</h2>
+    <table class="table-auto border-separate border-spacing-2">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Buy</th>
+        </tr>
+      </thead>
+      <tbody id="stock-table">
+        <tr>
+          <td>CAPD</td>
+          <td>$189.45</td>
+          <td>18</td>
+          <td><button class="bg-green-600 text-black rounded-xl px-2 font-bold" id="button1">Buy</button></td>
+        </tr>
+        <tr>
+          <td>AMZN</td>
+          <td>$999.99</td>
+          <td>12</td>
+          <td><button class="bg-green-600 text-black rounded-xl px-2 font-bold" id="button2">Buy</button></td>
+        </tr>
+        <tr>
+          <td>TOMN</td>
+          <td>$765.34</td>
+          <td>32</td>
+          <td><button class="bg-green-600 text-black rounded-xl px-2 font-bold" id="button3">Buy</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="p-4">
+    <h2 class="mx-2 font-bold text-xl text-purple-400">Your Stocks</h2>
+    <div class="flex flex-row gap-2 font-bold ml-2">
+      <span>Portfolio Name: </span>
+      <p class="bg-green-600 text-black rounded-xl px-2" id="portname"></p>
+    </div>
+    <table class="table-auto border-separate border-spacing-2" id="mystock">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="mystock-table">
+      </tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>
